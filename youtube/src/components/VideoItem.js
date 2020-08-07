@@ -5,7 +5,6 @@ const VideoItem = ({ video }) => {
         <div className="video-item item">
             <img
                 alt={video.snippet.channelTitle}
-                key={video.id.videoId}
                 className="ui image"
                 src={video.snippet.thumbnails.medium.url}
             />
