@@ -14,6 +14,11 @@ class App extends React.Component {
         console.log(response.data.articles);
         this.setState({ news: response.data.articles, selectedNews: response.data.articles[0] });
     };
+
+    onNewsSelect = (news) => {
+        this.setState({ selectedNews: news })
+    }
+
     render() {
         return (
             <>
@@ -24,7 +29,7 @@ class App extends React.Component {
                             <DisplayContent news={this.state.selectedNews} />
                         </div>
                         <div className='col-md-4'>
-                            <NewsList news={this.state.news} />
+                            <NewsList news={this.state.news} onNewsSelect={this.onNewsSelect} />
                         </div>
                     </div>
 

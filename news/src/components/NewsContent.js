@@ -1,6 +1,6 @@
 import React from 'react';
 
-const NewsContent = ({ news }) => {
+const NewsContent = ({ news, onNewsSelect }) => {
 
     if (news.author === null) {
         news.author = 'Unknown';
@@ -11,8 +11,7 @@ const NewsContent = ({ news }) => {
     }
     return (
         <>
-            {/* <div onClick={() => onNewsSelect(video)} className="card mb-3 my-2" style={myStyle}></div> */}
-            <div className="card mb-3 my-2" style={myStyle}>
+            <div onClick={() => onNewsSelect(news)} className="card mb-3 my-2" style={myStyle}>
                 <div className="row no-gutters">
                     <div className="col-md-4">
                         <img src={news.urlToImage} className="card-img" alt="..." />
