@@ -2,7 +2,9 @@ import React, { useState } from 'react';
 import Accordion from './components/Accordion';
 import Search from './components/Search';
 import Dropdown from './components/Dropdown';
-
+import Translate from './components/Translate'
+import Route from './components/Route';
+import Header from './components/Header';
 const options = [
     {
         label: 'The color of Red',
@@ -32,16 +34,28 @@ const items = [
         content: 'As the name implies, ReactDOM is the glue between React and the DOM. Often, we will only use it for one single thing: mounting with ReactDOM. Another useful feature of ReactDOM is ReactDOM.findDOMNode() which we can use to gain direct access to a DOM element.'
     }
 ]
-
 export default () => {
     const [selected, setSelected] = useState(options[0])
     return (
         <div className='ui container'>
-            {/* <Accordion items={items} /> */}
-            {/* <Search /> */}
-            <Dropdown
-                selected={selected}
-                onSelectedChanges={setSelected}
-                options={options} />
-        </div>);
+            <Header />
+            <Route path='/'>
+                <Accordion items={items} />
+            </Route>
+            <Route path="/list">
+                <Search />
+            </Route>
+            <Route path='/translate'>
+                <Translate />
+            </Route>
+            <Route path='/dropdown'>
+                <Dropdown
+                    label="Select a color"
+                    options={options}
+                    selected={selected}
+                    onSelectedChanges={setSelected}
+                />
+            </Route>
+        </div>
+    )
 };

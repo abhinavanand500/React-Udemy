@@ -1,1 +1,4 @@
 wikipedia = en.wikipedia.org/w/api.php?action=query&list=search&format=json&srsearch=programming
+
+
+google/ translations = 'AIzaSyCHUCmpR7cT_yDFHC98CZJy2LTms-IwDlM'
