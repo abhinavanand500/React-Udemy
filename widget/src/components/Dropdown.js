@@ -2,19 +2,32 @@ import React, { useState, useEffect, useRef } from 'react';
 
 const DropDown = ({ options, selected, onSelectedChanges, label }) => {
     const [open, SetOpen] = useState(false);
-    console.log("Hello");
-    const [text, setText] = useState('');
     const ref = useRef();
     useEffect(() => {
-        document.body.addEventListener('click', (event) => {
+        const onBodyClick = (event) => {
             if (ref.current.contains(event.target)) {
                 return;
             }
-            SetOpen(false);
-        })
-    })
 
-    const mycolor = selected.value;
+            SetOpen(false);
+        };
+
+        document.body.addEventListener('click', onBodyClick);
+
+        return () => {
+            document.body.removeEventListener('click', onBodyClick);
+        };
+    }, []);
+
+
+    // useEffect(() => {
+    //     document.body.addEventListener('click', (event) => {
+    //         if (ref.current.contains(event.target)) {
+    //             return;
+    //         }
+    //         SetOpen(false);
+    //     })
+    // })
     const renderedItems = options.map((option) => {
         if (option.value === selected.value) {
             return null;
