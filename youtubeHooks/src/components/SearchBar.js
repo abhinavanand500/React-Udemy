@@ -10,7 +10,7 @@ const SearchBar = (props) => {
                 props.onFormSubmit(term);
             }} className="ui form">
                 <div className="field">
-                    <label>Video Search</label>
+                    <label>What you want to watch?</label>
                     <input
                         type="text"
                         value={term}
