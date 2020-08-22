@@ -1,0 +1,19 @@
+{
+  "streams": [
+    {
+      "title": "COVID Tracker",
+      "description": "It will display the cases country wise",
+      "id": 1
+    },
+    {
+      "title": "Django Vs Flask",
+      "description": "Django is best",
+      "id": 2
+    },
+    {
+      "title": "Ranchi - My Hometown",
+      "description": "Best Place to live",
+      "id": 3
+    }
+  ]
+}
