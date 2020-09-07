@@ -1,36 +1,81 @@
-import html from "../../images/html.jpg";
-import django from "../../images/django.png";
-import android from "../../images/android.png";
-import ios from "../../images/ios.png";
-import react from "../../images/react.png";
-import programmer from "../../images/programmer.jpg";
+import portfolio from "../../images/portfolio.png";
+import bloggify from "../../images/bloggify.png";
+import geofencing from "../../images/geofencing.png";
+import sac from "../../images/sac.png";
+import covid from "../../images/covid.png";
+import geoApp from "../../images/geoApp.png";
+import youtube from "../../images/youtube.png";
+import toll from "../../images/toll.png";
 
 const Sdata = [
     {
-        imgsrc: html,
-        title: "Web Development",
+        imgsrc: portfolio,
+        content:
+            "This is a Portfolio Website in which all details like project, resume, etc are present. You can also contact me through this website",
+        title: "My Portfolio",
+        glink:
+            "https://github.com/abhinavanand500/React-Udemy/tree/master/website",
+        plink: "https://aarohan.vercel.app/",
     },
     {
-        imgsrc: programmer,
-        title: "C++ and Python ",
-    },
-
-    {
-        imgsrc: android,
-        title: "Android App Development",
-    },
-    {
-        imgsrc: ios,
-        title: "IOS App Development",
-    },
-    {
-        imgsrc: react,
-        title: "React Development",
+        imgsrc: bloggify,
+        content:
+            "Blog created using HTML,CSS,JS, Django, SQLite. Only authorised people are allowed to comment or write blog.",
+        title: "Bloggify",
+        glink: "https://github.com/abhinavanand500/Bloggify",
+        plink: "http://bloggify.pythonanywhere.com/",
     },
 
     {
-        imgsrc: django,
-        title: "Django Development",
+        imgsrc: geofencing,
+        content:
+            "Employees can mark themselves present by mobile phone. And their attendance will only be marked when they are present in Office",
+        title: "GeoFencing Attendance System",
+        glink: "https://github.com/abhinavanand500/GeoFence-Django",
+        plink: "http://abhinavanand500.pythonanywhere.com/",
+    },
+    {
+        imgsrc: sac,
+        content:
+            "Platform which will help the people to donate and ensure them their donation will reach to the people who actually need it. ",
+        title: "SACATE",
+        glink: "https://github.com/abhinavanand500/Sacate",
+        plink: "http://sac.pythonanywhere.com/",
+    },
+    {
+        imgsrc: covid,
+        content:
+            "It will show the details of COVID cases in whole world and each country. It is a web-App designed by using React",
+        title: "COVID Tracker",
+        glink: "https://github.com/abhinavanand500/react-covidTracker",
+        plink: "https://abhinavanand500.github.io/react-covidTracker/",
+    },
+
+    {
+        imgsrc: geoApp,
+        content:
+            "This is a Mobile App which can be used to mark employees attendance and attendance will only be marked if they are near to office",
+        title: "GeoFencing App",
+        glink: "https://github.com/abhinavanand500/myAppGeofence",
+        plink:
+            "https://drive.google.com/drive/folders/1p0KiUbJoFwhjd-jwhc07bPnjGpNwD29p?usp=sharing",
+    },
+
+    {
+        imgsrc: youtube,
+        content:
+            "This is a website created using React and youtube API. It works exactly like youtube. You can watch anything",
+        title: "Youtube Website Clone",
+        glink:
+            "https://github.com/abhinavanand500/React-Udemy/tree/master/youtubeHooks",
+        plink: "https://youtube-hooks-gilt.vercel.app/",
+    },
+    {
+        imgsrc: toll,
+        content:
+            "Designed a model which on implementation can ease the process of toll system and also reduce the accident in Highways.",
+        title: "Modern Toll System",
+        glink: "https://github.com/abhinavanand500/Modern_Toll_System",
     },
 ];
 
