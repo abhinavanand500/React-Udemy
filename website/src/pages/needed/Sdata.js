@@ -6,6 +6,7 @@ import covid from "../../images/covid.png";
 import geoApp from "../../images/geoApp.png";
 import youtube from "../../images/youtube.png";
 import toll from "../../images/toll.png";
+import amazon from "../../images/amazon.png";
 
 const Sdata = [
     {
@@ -64,6 +65,15 @@ const Sdata = [
         // glink: "https://github.com/abhinavanand500/myAppGeofence",
         plink:
             "https://drive.google.com/drive/folders/1p0KiUbJoFwhjd-jwhc07bPnjGpNwD29p?usp=sharing",
+        glink: "/",
+    },
+    {
+        imgsrc: amazon,
+        content:
+            "Amazon clone created using ReactJS. Fully functioning react web app.",
+        title: "Amazon Clone",
+        // glink: "https://github.com/abhinavanand500/Bloggify",
+        plink: "https://amazon-alpha.vercel.app/",
         glink: "/",
     },
 
