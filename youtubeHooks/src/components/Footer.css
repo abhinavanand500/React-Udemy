@@ -1,0 +1,15 @@
+.footer {
+    background-color: rgb(247, 241, 241);
+    padding: 40px;
+    text-align: center;
+    color: red;
+}
+.breadcrumb {
+    background-color: red;
+
+    padding: 20px;
+    text-align: center;
+}
+.aa {
+    text-align: center;
+}

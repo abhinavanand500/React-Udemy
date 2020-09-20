@@ -1,9 +1,9 @@
-import React from 'react';
+import React from "react";
 const VideoDetails = ({ video }) => {
     if (!video) {
         return (
-            <div class="ui segment">
-                <div class="ui active loader"></div>
+            <div class='ui segment'>
+                <div class='ui active loader'></div>
                 <p></p>
             </div>
         );
@@ -12,7 +12,12 @@ const VideoDetails = ({ video }) => {
     return (
         <div>
             <div className='ui embed'>
-                <iframe title='my player' src={videoSrc} />
+                <iframe
+                    title='my player'
+                    src={videoSrc}
+                    allow='autoplay; fullscreen'
+                    allowfullscreen
+                />
             </div>
             <div className='ui segment'>
                 <h4 className='ui header'>{video.snippet.title}</h4>
@@ -20,6 +25,6 @@ const VideoDetails = ({ video }) => {
             </div>
         </div>
     );
-}
+};
 
 export default VideoDetails;

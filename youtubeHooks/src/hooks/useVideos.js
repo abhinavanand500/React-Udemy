@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from "react";
-import Youtube from '../apis/Youtube';
+import { useState, useEffect } from "react";
+import Youtube from "../apis/Youtube";
 const useVideos = (defaultSearchTerm) => {
     const [videos, setVideos] = useState([]);
     useEffect(() => {
         search(defaultSearchTerm);
-    }, [defaultSearchTerm])
+    }, [defaultSearchTerm]);
     const search = async (term) => {
         const response = await Youtube.get("/search", {
             params: {
@@ -13,7 +13,7 @@ const useVideos = (defaultSearchTerm) => {
         });
         setVideos(response.data.items);
     };
-    return [videos, search]
+    return [videos, search];
 };
 
 export default useVideos;
