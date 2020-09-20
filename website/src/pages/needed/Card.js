@@ -19,7 +19,7 @@ const Card = (props) => {
                     <p className='card-text'>{props.content}</p>
                     <div className='row'>
                         {props.plink ? (
-                            <div className='col-6'>
+                            <div className='col-6 mt-1'>
                                 <a
                                     href={props.plink}
                                     className='btn btn-primary'>
@@ -27,7 +27,7 @@ const Card = (props) => {
                                 </a>
                             </div>
                         ) : null}
-                        <div className='col-6'>
+                        <div className='col-6 mt-1'>
                             <a href={props.glink} className='btn btn-primary'>
                                 Get Code
                             </a>

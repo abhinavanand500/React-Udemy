@@ -1,18 +1,20 @@
 import React, { useState } from "react";
 
-
 const SearchBar = (props) => {
-    const [term, setTerm] = useState('');
+    const [term, setTerm] = useState("");
     return (
-        <div className="search-bar ui segment">
-            <form onSubmit={(e) => {
-                e.preventDefault();
-                props.onFormSubmit(term);
-            }} className="ui form">
-                <div className="field">
+        <div className='search-bar ui segment'>
+            <form
+                onSubmit={(e) => {
+                    e.preventDefault();
+                    props.onFormSubmit(term);
+                }}
+                className='ui form'
+                style={{ width: "100%" }}>
+                <div className='field'>
                     <label>What you want to watch?</label>
                     <input
-                        type="text"
+                        type='text'
                         value={term}
                         onChange={(e) => setTerm(e.target.value)}
                     />
@@ -20,25 +22,6 @@ const SearchBar = (props) => {
             </form>
         </div>
     );
-
-}
-
-
-
-
-// class SearchBar extends React.Component {
-//     state = { term: "" };
-//     onInputChange = (event) => {
-//         this.setState({ term: event.target.value });
-//     };
-//     onFormSubmit = (event) => {
-//         event.preventDefault();
-//         this.props.onFormSubmit(this.state.term);
-//         // Callback function is required from app.js
-//     };
-//     render() {
-
-//     }
-// }
+};
 
 export default SearchBar;
