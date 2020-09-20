@@ -1,15 +1,14 @@
 import React from "react";
 import Template from "./Template";
-import web from "../images/2.svg";
 const About = () => {
     return (
         <Template
-            h1Value="We are here to help you."
-            brand="We are For You"
-            h2Value="Please bring your idea. We will implement it for you"
-            imgsrc={web}
-            visit="/service"
-            btname="Our Services"
+            h1Value='I am a final year student of NHCE'
+            brand='Bangalore'
+            h2Value='I like to solve problem statement in online Platform like Hackerrank, Codeforces, etc. Also I like to develop website.'
+            imgsrc='https://educationiconnect.com/college/wp-content/uploads/2020/06/NEW-HORIZON-COLLEGE-OF-ENGINEERING.jpg'
+            visit='/service'
+            btname='View My Projects'
         />
     );
 };
