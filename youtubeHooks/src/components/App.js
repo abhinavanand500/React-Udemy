@@ -15,7 +15,9 @@ const App = () => {
         <>
             <div className='container'>
                 <div className='breadcrumb mx-auto'>
-                    <h4 className='mx-auto'>Welcome To Youtube Clone</h4>
+                    <h4 className='mx-auto' style={{ color: "white" }}>
+                        Welcome To Youtube Clone
+                    </h4>
                 </div>
                 <SearchBar onFormSubmit={search} />
                 <div className='row'>
