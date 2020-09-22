@@ -1,10 +1,11 @@
-import React from 'react';
-import Home from './pages/Home';
-import About from './pages/About';
-import Contact from './pages/Contact';
-import Service from './pages/Service';
-import Navbar from './component/Navbar';
-import { Switch, Route, Redirect } from 'react-router-dom';
+import React from "react";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import Service from "./pages/Service";
+import Navbar from "./component/Navbar";
+import Footer from "./pages/Footer";
+import { Switch, Route, Redirect } from "react-router-dom";
 const App = () => {
     return (
         <>
@@ -18,6 +19,6 @@ const App = () => {
             </Switch>
         </>
     );
-}
+};
 
 export default App;

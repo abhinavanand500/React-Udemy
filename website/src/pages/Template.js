@@ -18,7 +18,7 @@ const Template = ({ h1Value, brand, h2Value, imgsrc, btname, visit, page }) => {
                                     </h1>
                                     <h2 className='my-3'>{h2Value}</h2>
                                     {page === "home" ? <LinksForApp /> : null}
-                                    <div className='my-3'>
+                                    <div className='my-3 mb-3'>
                                         <NavLink
                                             to={visit}
                                             exact
