@@ -57,7 +57,7 @@ const Navbar = () => {
                                                 activeClassName='menu_active'
                                                 className='nav-link'
                                                 target='blank'
-                                                href='https://drive.google.com/file/d/1lAqqJH4kFSWHM1kxCJBo7W7cy7cFsJJw/view?usp=sharing'>
+                                                href='https://drive.google.com/file/d/1LDllckprRPDvN8yXwnElvXaQw5rFvEak/view?usp=sharing'>
                                                 Resume
                                             </a>
                                         </li>
