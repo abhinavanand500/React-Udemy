@@ -7,6 +7,7 @@ import geoApp from "../../images/geoApp.png";
 import youtube from "../../images/youtube.png";
 import toll from "../../images/toll.png";
 import amazon from "../../images/amazon.png";
+import netflix from "../../images/netflix.png";
 
 const Sdata = [
     {
@@ -17,6 +18,16 @@ const Sdata = [
         // glink:
         //     "https://github.com/abhinavanand500/React-Udemy/tree/master/website",
         plink: "https://aarohan.vercel.app/",
+        glink: "/",
+    },
+    {
+        imgsrc: netflix,
+        content:
+            "This is a clone of Netflix Website. It is created using React. We can also watch trailer for some videos by clicking on them",
+        title: "Netflix Clone",
+        // glink:
+        //     "https://github.com/abhinavanand500/React-Udemy/tree/master/website",
+        plink: "https://netflix-clone-a00f4.web.app/",
         glink: "/",
     },
     {
@@ -70,7 +81,7 @@ const Sdata = [
     {
         imgsrc: amazon,
         content:
-            "Amazon clone created using ReactJS. Fully functioning react web app.",
+            "Amazon clone created using ReactJS. Fully functioning react web app. You can add or remove products.",
         title: "Amazon Clone",
         // glink: "https://github.com/abhinavanand500/Bloggify",
         plink: "https://amazon-alpha.vercel.app/",
