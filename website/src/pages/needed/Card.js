@@ -1,6 +1,5 @@
 import React from "react";
 const Card = (props) => {
-    console.log(props);
     return (
         <div className='col-md-4 col-12 mx-auto'>
             <div className='card mt-3'>
