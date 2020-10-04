@@ -2,10 +2,10 @@ import React from "react";
 import "./Footer.css";
 function Footer() {
     return (
-        <div className='footer mt-4'>
-            <h3 className='text1'>
-                🚀 This website is created by <strong>Abhinav Anand</strong> 🚀
-            </h3>
+        <div className='w-100 bg-light text-center mt-3'>
+            <p>
+            © 2020 AAROHAN . All Rights Reserved | Abhinav Anand
+            </p>
         </div>
     );
 }

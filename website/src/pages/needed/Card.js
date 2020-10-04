@@ -7,7 +7,7 @@ const Card = (props) => {
                     src={props.imgsrc}
                     className='card-img-top'
                     style={{ maxHeight: "210px", minHeight: "210px" }}
-                    alt='...'
+                    alt='Cards not loaded'
                 />
                 <div className='card-body'>
                     <h5
