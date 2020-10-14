@@ -8,6 +8,7 @@ import youtube from "../../images/youtube.png";
 import toll from "../../images/toll.png";
 import amazon from "../../images/amazon.png";
 import netflix from "../../images/netflix.png";
+import discord from "../../images/Discord.png";
 
 const Sdata = [
     {
@@ -31,12 +32,22 @@ const Sdata = [
         glink: "/",
     },
     {
-        imgsrc: bloggify,
+        imgsrc: discord,
+        title: "Discord Clone",
         content:
-            "Blog created using HTML,CSS,JS, Django, SQLite. Only authorised people are allowed to comment or write blog.",
-        title: "Bloggify",
-        // glink: "https://github.com/abhinavanand500/Bloggify",
-        plink: "http://bloggify.pythonanywhere.com/",
+            "This is a clone of Discord. Anyone can login using Google and create or participate in any conversations. ",
+        // glink:
+        //     "https://github.com/abhinavanand500/React-Udemy/tree/master/website",
+        plink: "https://discord-clone-dcd54.web.app/",
+        glink: "/",
+    },
+    {
+        imgsrc: covid,
+        content:
+            "It will show the details of COVID cases in whole world and each country. It is a web-App designed by using React",
+        title: "COVID Tracker",
+        // glink: "https://github.com/abhinavanand500/react-covidTracker",
+        plink: "https://abhinavanand500.github.io/react-covidTracker/",
         glink: "/",
     },
 
@@ -59,12 +70,12 @@ const Sdata = [
         glink: "/",
     },
     {
-        imgsrc: covid,
+        imgsrc: bloggify,
         content:
-            "It will show the details of COVID cases in whole world and each country. It is a web-App designed by using React",
-        title: "COVID Tracker",
-        // glink: "https://github.com/abhinavanand500/react-covidTracker",
-        plink: "https://abhinavanand500.github.io/react-covidTracker/",
+            "Blog created using HTML,CSS,JS, Django, SQLite. Only authorised people are allowed to comment or write blog.",
+        title: "Bloggify",
+        // glink: "https://github.com/abhinavanand500/Bloggify",
+        plink: "http://bloggify.pythonanywhere.com/",
         glink: "/",
     },
 
