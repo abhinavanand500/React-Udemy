@@ -28,7 +28,7 @@ const Sdata = [
             "This is a clone of Netflix Website. It is created using React. We can also watch trailer for some videos by clicking on them",
         title: "Netflix Clone",
         glink: "https://github.com/abhinavanand500/Netflix-Clone",
-        plink: "https://netflix-clone-a00f4.web.app/",
+        plink: "https://netflix-one.vercel.app/",
         // glink: "/",
     },
     {
@@ -37,7 +37,7 @@ const Sdata = [
         content:
             "This is a clone of Discord. Anyone can login using Google and create or participate in any conversations. ",
         glink: "https://github.com/abhinavanand500/Discord-Clone",
-        plink: "https://discord-clone-dcd54.web.app/",
+        plink: "https://discord-rho.vercel.app/",
         // glink: "/",
     },
     {
