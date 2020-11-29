@@ -10,7 +10,7 @@ const Home = () => {
             h2Value="FULL STACK WEB DEVELOPER"
             imgsrc={web}
             visit="/about"
-            btname="About Us"
+            btname="About Me"
             page="home"
         />
     );
