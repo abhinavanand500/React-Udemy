@@ -3,16 +3,20 @@ import React, { useState } from "react";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 toast.configure();
-const [name, setName] = useState("");
-const [email, setEmail] = useState("");
-const [phone, setPhone] = useState("");
-const [query, setQuery] = useState("");
+
 const submitSuccessfully = () => {
     toast.success(
         "Hey your message is sent Successfully. Thankyou for visiting this website.",
     );
 };
 
+
+
+const Contact = () => {
+    const [name, setName] = useState("");
+const [email, setEmail] = useState("");
+const [phone, setPhone] = useState("");
+const [query, setQuery] = useState("");
 const resetAllField = () => {
     setName("");
     setEmail("");
@@ -20,7 +24,6 @@ const resetAllField = () => {
     setQuery("");
 };
 
-const Contact = () => {
     const action = (event) => {
         event.preventDefault();
         const coll = { name: name, email: email, phone: phone, query: query };
