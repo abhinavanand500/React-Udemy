@@ -22,6 +22,6 @@ urlpatterns = [
     path('', views.home,name='home'),
     path('login', views.handleLogin),
     path('logout', views.handleLogout),
-    path('contact', include('contact.urls'))
+    path('contact/', include('contact.urls'))
 
 ]

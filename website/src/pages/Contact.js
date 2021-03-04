@@ -2,33 +2,44 @@ import React, { useState } from "react";
 // import axios from "axios";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import axios from '../apis/axios'
 toast.configure();
 
-const submitSuccessfully = () => {
+const submitSuccessfully = async (coll) => {
+    const response = await axios.post("contact/postquery",{
+        params : coll,
+    });
+    const status = response.data.status
+    if(status=='success'){
     toast.success(
         "Hey your message is sent Successfully. Thankyou for visiting this website.",
-    );
+    );}
+    else if(status =='error'){
+        toast.error(
+            "Hey your message is sent Successfully. Thankyou for visiting this website.",
+        );
+    }
 };
 
 
 
 const Contact = () => {
     const [name, setName] = useState("");
-const [email, setEmail] = useState("");
-const [phone, setPhone] = useState("");
-const [query, setQuery] = useState("");
-const resetAllField = () => {
-    setName("");
-    setEmail("");
-    setPhone("");
-    setQuery("");
+    const [email, setEmail] = useState("");
+    const [phone, setPhone] = useState("");
+    const [query, setQuery] = useState("");
+    const resetAllField = () => {
+        setName("");
+        setEmail("");
+        setPhone("");
+        setQuery("");
 };
 
     const action = (event) => {
         event.preventDefault();
         const coll = { name: name, email: email, phone: phone, query: query };
-        console.log(coll);
-        submitSuccessfully();
+        // console.log(coll);
+        submitSuccessfully(coll);
         resetAllField();
     };
 
