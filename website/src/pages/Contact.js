@@ -6,9 +6,12 @@ import axios from '../apis/axios'
 toast.configure();
 
 const submitSuccessfully = async (coll) => {
+    console.log(JSON.stringify(coll))
     const response = await axios.post("contact/postquery",{
         params : coll,
     });
+    
+    console.log(response.data)
     const status = response.data.status
     if(status=='success'){
     toast.success(
