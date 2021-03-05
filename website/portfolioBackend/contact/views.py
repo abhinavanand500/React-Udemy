@@ -10,7 +10,9 @@ import json
 
 def landingPage(request):
     if request.user.is_authenticated:
-        return render(request, 'contact/contact.html')
+        feeds = Contact.objects.all().order_by('-sno')
+        params = {'feeds': feeds}
+        return render(request, 'contact/contact.html', params)
     return render(request, 'Backend/home.html')
 
 @csrf_exempt

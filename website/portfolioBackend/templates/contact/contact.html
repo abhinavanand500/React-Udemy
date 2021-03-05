@@ -1,14 +1,16 @@
 {% extends 'base1.html' %} {% block css %}{% endblock css %} {% block body %} 
-  <div class='container-fluid'>
-  <div class="card mt-2">
-  <h5 class="card-header">Featured</h5>
-  <div class="card-body">
-    <h5 class="card-title">Special title treatment</h5>
-    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-    {% comment %} <a href="#" class="btn btn-primary">Go somewhere</a> {% endcomment %}
-  </div>
-</div>
+  {% for feed in feeds %}
+          <div class='container-fluid'>
+          <div class="card mt-2">
+          <h5 class="card-header" style="background-color : rgb(105, 3, 3); color : white">{{feed.name}}</h5>
+          <div class="card-body" style="background-color : rgb(215, 238, 197); color : black">
+            <h5 class="card-title">Email :: {{feed.email}}</h5>
+            <h5 class="card-title">Phone :: {{feed.phone}}</h5>
+            <h5 class="card-title">Query :: {{feed.query}}</h5>
+            
+          </div>
+          </div>
+          </div>
+  {% endfor %}
 
-
-</div>
 {% endblock body %}

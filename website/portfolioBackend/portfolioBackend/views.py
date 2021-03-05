@@ -31,4 +31,4 @@ def handleLogout(request):
         print(request.user)
         logout(request)
         messages.success(request, "Successfully Logged Out")
-        return render(request, 'Backend/home.html')
+        return redirect('home')
