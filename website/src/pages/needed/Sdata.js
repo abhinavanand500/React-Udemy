@@ -10,8 +10,18 @@ import amazon from "../../images/amazon.png";
 import netflix from "../../images/netflix.png";
 import discord from "../../images/Discord.png";
 import urlshortner from "../../images/url.png";
+import hulu from "../../images/hulu.jpg";
 
 const Sdata = [
+    {
+        imgsrc: hulu,
+        content:
+            "This is a clone of Hulu Website. It is created using NextJS. We can check the latest movies according to their types.",
+        title: "Hulu Clone",
+        glink: "https://github.com/abhinavanand500/Hulu-Clone-NextJs",
+        plink: "https://hulu-clone-eta.vercel.app/",
+        // glink: "/",
+    },
     {
         imgsrc: portfolio,
         content:
